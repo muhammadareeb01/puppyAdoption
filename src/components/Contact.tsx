@@ -61,9 +61,9 @@ export default function Contact() {
             style={{ background: "rgba(244,162,97,0.12)" }}>
             📬 Get In Touch
           </span>
-          <h2 className="section-title">We'd Love to Hear From You</h2>
+          <h2 className="section-title">We&apos;d Love to Hear From You</h2>
           <p className="section-subtitle">
-            Have a question or want to book a session? Drop us a message and we'll wag our way back to you!
+            Have a question or want to book a session? Drop us a message and we&apos;ll wag our way back to you!
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function Contact() {
                 <div className="py-12 text-center">
                   <div className="text-6xl mb-4 animate-bounce-soft">🐾</div>
                   <h3 className="font-heading font-bold text-2xl text-gray-800 mb-2">Woof! Message Received!</h3>
-                  <p className="text-gray-500">Our team will get back to you within 24 hours. Your furry friend can't wait!</p>
+                  <p className="text-gray-500">Our team will get back to you within 24 hours. Your furry friend can&apos;t wait!</p>
                   <button
                     onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", message: "" }); }}
                     className="mt-6 btn-primary inline-block"
@@ -205,7 +205,7 @@ export default function Contact() {
               }} />
               <div className="absolute bottom-4 left-4">
                 <span className="glass-card px-4 py-2 text-sm font-semibold text-gray-700 flex items-center gap-2">
-                  🐾 We're always here for your pup!
+                  🐾 We&apos;re always here for your pup!
                 </span>
               </div>
             </div>

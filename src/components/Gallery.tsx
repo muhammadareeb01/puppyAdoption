@@ -26,20 +26,22 @@ export default function Gallery() {
     return () => observer.disconnect();
   }, []);
 
+  type PawPos = { top?: string; bottom?: string; left?: string; right?: string; rot: string; size: string };
+
   return (
     <section id="gallery" className="py-24 relative overflow-hidden" style={{
       background: "linear-gradient(180deg, #f0f9ff 0%, #fefae0 100%)"
     }}>
       {/* Floating bg paws */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {[
+        {([
           { top: "10%", left: "5%", rot: "15deg", size: "4rem" },
           { top: "60%", right: "4%", rot: "-20deg", size: "5rem" },
           { top: "30%", right: "8%", rot: "30deg", size: "3rem" },
           { bottom: "15%", left: "7%", rot: "-10deg", size: "4rem" },
-        ].map((paw, i) => (
+        ] as PawPos[]).map((paw, i) => (
           <div key={i} className="absolute select-none text-orange-200"
-            style={{ top: paw.top, left: (paw as any).left, right: (paw as any).right, bottom: (paw as any).bottom, fontSize: paw.size, transform: `rotate(${paw.rot})`, opacity: 0.18 }}>
+            style={{ top: paw.top, left: paw.left, right: paw.right, bottom: paw.bottom, fontSize: paw.size, transform: `rotate(${paw.rot})`, opacity: 0.18 }}>
             🐾
           </div>
         ))}

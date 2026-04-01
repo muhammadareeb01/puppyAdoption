@@ -89,7 +89,7 @@ export default function About() {
 
             <p className="text-gray-500 text-lg leading-relaxed mb-8">
               At Puppy Haven, we believe every puppy deserves more than just care—they deserve a
-              second family. Founded in 2015, we've been the trusted home away from home for
+              second family. Founded in 2015, we&apos;ve been the trusted home away from home for
               thousands of furry friends and their loving owners. Our expert team of certified
               trainers and passionate caretakers work tirelessly to ensure every pup thrives.
             </p>

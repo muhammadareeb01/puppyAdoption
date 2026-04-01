@@ -104,7 +104,7 @@ export default function Testimonials() {
               style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
             >
               {/* Quote mark */}
-              <div className="text-5xl font-heading font-black leading-none mb-3 opacity-20 text-orange-400">"</div>
+              <div className="text-5xl font-heading font-black leading-none mb-3 opacity-20 text-orange-400">&quot;</div>
 
               {/* Text */}
               <p className="text-gray-600 text-sm leading-relaxed flex-1 italic">{t.text}</p>
@@ -148,7 +148,7 @@ export default function Testimonials() {
               {testimonials.map((t) => (
                 <div key={t.name} className="min-w-full px-2">
                   <div className="glass-card p-7">
-                    <div className="text-5xl font-heading font-black leading-none mb-3 opacity-20 text-orange-400">"</div>
+                    <div className="text-5xl font-heading font-black leading-none mb-3 opacity-20 text-orange-400">&quot;</div>
                     <p className="text-gray-600 text-sm leading-relaxed italic">{t.text}</p>
                     <div className="mt-4 mb-5"><StarRating count={t.rating} /></div>
                     <div className="flex items-center gap-3 pt-4 border-t border-orange-50">

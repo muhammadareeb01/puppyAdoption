@@ -37,18 +37,18 @@ export default function Hero() {
 
       {/* Floating Paw Icons */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {[
+        {([
           { top: "15%", left: "8%", size: "text-2xl", delay: "0s", cls: "paw-float-1" },
           { top: "70%", left: "12%", size: "text-3xl", delay: "1s", cls: "paw-float-2" },
           { top: "25%", right: "10%", size: "text-xl", delay: "2s", cls: "paw-float-3" },
           { top: "60%", right: "15%", size: "text-2xl", delay: "0.5s", cls: "paw-float-1" },
           { top: "80%", left: "30%", size: "text-lg", delay: "3s", cls: "paw-float-2" },
           { top: "40%", right: "5%", size: "text-3xl", delay: "1.5s", cls: "paw-float-3" },
-        ].map((paw, i) => (
+        ] as { top: string; left?: string; right?: string; size: string; delay: string; cls: string }[]).map((paw, i) => (
           <span
             key={i}
             className={`absolute ${paw.size} ${paw.cls} select-none`}
-            style={{ top: paw.top, left: (paw as any).left, right: (paw as any).right, animationDelay: paw.delay }}
+            style={{ top: paw.top, left: paw.left, right: paw.right, animationDelay: paw.delay }}
           >
             🐾
           </span>
